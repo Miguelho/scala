@@ -22,6 +22,13 @@ object Exercise4 {
     println(lista$1.get(3))
     println("Head "+lista$1.head())
     println("Last "+lista$1.last())
+    
+    val sum = lista$1.foldLeft(0)((value: Int, accum) => {value+accum})
+    println(sum)
+    
+    println(lista$1.reverse())
+    
+    println(lista$1.foldRight(0)( (value: Int, accum) => {value+accum}))
   }
 }
 
